@@ -1,0 +1,145 @@
+* {
+	padding: 0;
+	margin: 0;
+	font-family: "Inter", sans-serif;
+}
+body{
+	background-color: #141414;
+	padding-top: 10px;
+}
+#he {
+	position: -webkit-sticky;
+	position: sticky;
+	top: 0;
+	margin: auto;
+	text-align: center;
+	background-color: #e6e6e6;
+	border: 2px solid #d1f5ff;
+	width: 100px;
+	border-radius: 50px;
+	color: #6d6d6d;
+	font-weight: 700;
+
+}
+.di{
+	margin: auto;
+	padding: 30px ;
+	background-color: #4a4a4a;
+	border: 1px #ff6666;
+	border-radius: 50px;
+	width: 35%;
+	box-shadow: 10px 10px 5px #e6e6e6;
+	font-size: 1.5em;
+	color: #e6e6e6;
+}
+.di input{
+	margin: 10px;
+	height: 35px;
+	font-size: 1em;
+	width: 90%;
+	color: grey;
+	padding: 5px;
+}
+.di label{
+	padding-left: 7px;
+}
+.di select{
+	height: 35px;
+	font-size: 25px;
+	color: grey;
+}
+.di textarea{
+	font-size: 25px;
+	width: 90%;
+	color: grey;
+	padding: 10px;
+}
+#btn {
+	display: flex;
+	margin: auto;
+	margin-bottom: 50px;
+	padding: 20px 50px ;
+	background-color: #4a4a4a;
+	border: 1px #ff6666;
+	border-radius: 50px;
+	box-shadow: 6px 6px 6px #e6e6e6;
+	font-size: 16px;
+	color: #e6e6e6;
+	text-align: center;
+	transition-duration: 0.4s;
+}
+#btn:hover{
+	background-color: #e6e6e6;
+	color: #4a4a4a;
+	box-shadow: 6px 6px 7px #4a4a4a;
+	cursor: pointer;
+}
+#root{
+	width: 90%;
+	min-height: 1vh;
+	margin: auto;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	gap: 50px 30px;
+	flex-wrap: wrap;
+	padding-bottom: 50px;
+
+}
+.card {
+	width: 320px;
+	background-color: #292D31;
+	color: white;
+	text-align: center;
+	border-radius: 35px;
+	overflow: hidden;
+	border: 2px solid rgba(255, 255, 255, 0.2);
+	padding: 25px;
+}
+.card h1 {
+	font-weight: 800;
+	font-size: 25px;
+}
+.card h2 {
+	margin-bottom: 25px;
+	margin-top: 5px;
+	font-weight: 500;
+	color: rgba(255, 255, 255, 0.5);
+	font-size: 20px;
+}
+.card .social {
+	width: 30px;
+	height: 30px;
+	display: flex;
+	justify-content: center;
+	column-gap: 25px;
+	margin: auto;
+}
+.card .social a{
+	width: 30px;
+	height: 30px;
+	display: flex;
+	justify-content: center;
+	column-gap: 25px;
+	text-decoration: none;
+}
+.card .social i{
+	font-size: 25px;
+	color: rgba(255, 255, 255, 0.5);
+	display: flex;
+	justify-content: center;
+	column-gap: 25px;
+	transition-duration: 0.3s;
+}
+.card .social i:hover{
+	color: white;
+}
+.card hr{
+	border: none;
+	border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+	margin: 25px 0;
+}
+.card p{
+	font-weight: 300;
+	color: rgba(255, 255, 255, 0.9);
+}

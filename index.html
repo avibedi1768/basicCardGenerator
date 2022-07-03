@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Card Generator</title>
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700;800&display=swap" rel="stylesheet">
+</head>
+<body onload="loadwala()">
+	 <script src="https://www.gstatic.com/firebasejs/8.9.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.9.1/firebase-analytics.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.9.1/firebase.js"></script>
+	<script src="main.js"></script>
+
+
+	<h1 id="he">INFO</h1><br><br>
+	<section>
+		<div id="first">
+			<div class="di">
+				<label for="name">Name:</label><br>
+				<input type="text" id="name" value="Arshpreet Singh Bedi" placeholder="Your Name"><br>
+			</div>
+			<br><br><br>
+			<div class="di">
+				<label for="desig">Designation:</label><br>
+				<input type="text" id="desig" value="Web Dev" placeholder="Your designation"><br>
+			</div>
+			<br><br><br>
+
+			<div class="di">
+				<label for="email">Email:</label><br>
+				<input type="email" id="email" value="avibedi1234@gmail.com" placeholder="Your Email"><br>
+			</div>
+			<br><br><br>
+
+			<!-- <div class="di">
+				<label for="phn">Mobile Number:</label><br>
+				<input type="Number" id="phn" placeholder="Your Mobile Number">
+			</div>
+			<br><br><br> -->
+			
+			<!-- <div class="di">
+				<label for="img">Upload image</label><br>
+				<input type="file" id="img" name="img" accept="image/*">
+			</div>
+			<br><br><br>-->
+
+			<div class="di">
+				<label for="ig">Instagram profile:</label><br>
+				<input type="text" id="ig" value="https://www.linkedin.com/in/arshpreet-singh-bedi-845758229/" placeholder="Your Instagram">
+			</div>
+			<br><br><br>
+
+			<div class="di">
+			<label for="gith">Github profile:</label><br>
+			<input type="text" id="gith" value="https://www.linkedin.com/in/arshpreet-singh-bedi-845758229/" placeholder="Your LinkedIn">
+			</div>
+			<br><br><br>
+
+			<div class="di">
+			<label for="li">LinkedIn profile:</label><br>
+			<input type="text" id="li" value="https://www.linkedin.com/in/arshpreet-singh-bedi-845758229/" placeholder="Your LinkedIn">
+			</div>
+			<br><br><br>
+
+			<div class="di"> <label for="about">About:</label><br>
+			<textarea rows="5" id="about" placeholder="Tell about yourself">I am currently persuing B-Tech Computer Science in a prestigious University in India, Guru Nanak Dev University, Amritsar, Punjab. However, right now I am in third academic semester so am at a novice level. But I aim to learn as often as possible.</textarea> 
+			</div>
+			<br><br><br> 
+
+			<button id="btn" onclick="accept(); window.location.reload()">Submit</button>
+			
+		</div>
+	</section>
+
+	<section id="root"></section>
+</body>
+</html>
