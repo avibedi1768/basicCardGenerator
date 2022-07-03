@@ -3,7 +3,7 @@ if(window.localStorage.getItem("id") == undefined){
 }
 function loadwala() {
 	for(i=1; i<window.localStorage.getItem("id"); i++){
-		if(window.localStorage.getItem("name"+i) == ""){
+		if(window.localStorage.getItem("name"+i) == "" || window.localStorage.getItem("name"+i) == undefined){
 			continue;
 		}
 		var name = window.localStorage.getItem("name"+i);
@@ -29,9 +29,11 @@ function accept(){
 	if (name=="" || desig=="" || email=="" || ig=="" || gith=="" || li=="" || about==""){
 		window.alert("Please enter some data!!");
 	}
-	sendToLocal(name, desig, email, ig, gith, li, about, id);
-	id++;
-	window.localStorage.setItem("id",id);
+	else{
+		sendToLocal(name, desig, email, ig, gith, li, about, id);
+		id++;
+		window.localStorage.setItem("id",id);
+	}
 }
 function sendToLocal(name, desig, email, ig, gith, li, about, id) {
 	window.localStorage.setItem("name"+id, name);
