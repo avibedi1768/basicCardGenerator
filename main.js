@@ -3,7 +3,9 @@ if(window.localStorage.getItem("id") == undefined){
 }
 function loadwala() {
 	for(i=1; i<window.localStorage.getItem("id"); i++){
-		
+		if(window.localStorage.getItem("name"+i) == ""){
+			continue;
+		}
 		var name = window.localStorage.getItem("name"+i);
 		var desig = window.localStorage.getItem("desig"+i);
 		var email = window.localStorage.getItem("email"+i);
