@@ -15,7 +15,7 @@ if(window.localStorage.getItem("order") == 1){
 	document.getElementById("sec").style.backgroundColor = "rgba(255, 255, 255, 0.5)";
 }
 if(window.localStorage.getItem("order") == 2){
-	location.href = "index_card.html";
+	location.href = "card/index_card.html";
 }
 document.querySelector("#sec").addEventListener("click", () =>{
 	document.getElementById("register").style.display = "none";
@@ -57,7 +57,7 @@ function match(){
 		console.log(password, pass);
 	
 		if(pass == password){
-			location.href = "index_card.html";
+			location.href = "card/index_card.html";
 			window.localStorage.setItem("order", 2);
 
 		}
