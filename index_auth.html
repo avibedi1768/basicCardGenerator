@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Login</title>
+	<link rel="stylesheet" type="text/css" href="style_auth.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+	
+	<div id="heading">
+		<button id="fir">Register</button>
+		<button id="sec">Login</button>
+	</div>
+	<section class="register" id="register">
+		<div class="text">
+			<p>Register to get your own exclusive cards!!</p>
+		</div>
+			<div class="whole">
+				<div class="take">
+					<label for="user">Username</label><br>
+					<input type="text" id="user" placeholder="Your Input"><br>
+					<label for="pass">Password</label><br>
+					<input type="password" id="pass" placeholder="Your Input"><br>
+				</div>
+				<button onclick="send()">Submit</button>
+			</div>
+	</section>
+	<section class="register" id="login">
+		<div class="text">
+			<p>Log-in to get started</p>
+		</div>
+			<div class="whole">
+				<div class="take">
+					<label for="User">Username</label><br>
+					<input type="text" id="User" placeholder="Your Input"><br>
+					<label for="Pass">Password</label><br>
+					<input type="password" id="Pass" placeholder="Your Input"><br>
+				</div>
+				<button onclick="match()">Submit</button>
+			</div>
+	</section>
+	<div id="snackbar1">Please enter some data!!</div>
+	<div id="snackbar2">Password not matched!!</div>
+
+	<script src="https://www.gstatic.com/firebasejs/8.9.1/firebase-app.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/8.9.1/firebase-analytics.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/8.9.1/firebase.js"></script>
+	<script>
+		// Your web app's Firebase configuration
+		// For Firebase JS SDK v7.20.0 and later, measurementId is optional
+		const firebaseConfig = {
+		apiKey: "AIzaSyDLy3u7BxPWMpAxJqPawtCCcf5Oxx5w_h4",
+		authDomain: "todo-b2fc0.firebaseapp.com",
+		projectId: "todo-b2fc0",
+		storageBucket: "todo-b2fc0.appspot.com",
+		messagingSenderId: "1034880743632",
+		appId: "1:1034880743632:web:4d8b33d74274b19b1346d5",
+		measurementId: "G-VGGGMTGSCH"
+		};
+
+		// Initialize Firebase
+		firebase.initializeApp(firebaseConfig);
+		firebase.analytics();
+	</script>
+	<script src="main_auth.js"></script>
+</body>
+</html>

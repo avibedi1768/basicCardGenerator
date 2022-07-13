@@ -1,0 +1,210 @@
+*{
+	padding: 0;
+	margin: 0;
+}
+body{
+	font-family: 'Poppins', sans-serif;
+	background-image: url(https://assets-global.website-files.com/6009ec8cda7f305645c9d91b/61dee4b795b07e1225c45dda_2021-01-Image%20for%20How%20fintech%20marketing%20teams%20can%20make%20web%20design%20work%20for%20them.png);
+	background-color: rgba(1, 1, 1, 1);
+	background-size: cover;
+}
+#heading{
+	margin: auto;
+	margin-top: 50px;
+	display: flex;
+	justify-content: center;
+	padding: 8px;
+	column-gap: 60px;
+	width: 300px;
+
+	background: rgba( 255, 255, 255, 0.3 );
+	box-shadow: 5px 5px 10px  rgba(1, 1, 1, 0.3);
+	backdrop-filter: blur( 3px );
+	-webkit-backdrop-filter: blur( 3px );
+	border-radius: 10px;
+	border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+#heading button{
+	border: none;
+	border-radius: 8px;
+	height: 35px;
+	width: 100px;
+	font-weight: 400;
+	font-size: 22px;
+	padding: 4px;
+}
+button:hover, button:focus{
+	cursor: pointer;
+	outline: none;
+	color: grey;
+}
+#heading #fir{
+	background-color: rgba( 255, 255, 255, 0.5 );
+}
+#heading #sec{
+	background-color: rgba(255, 255, 255, 0.2);
+}
+.register{
+	display: flex;
+	justify-content: center;
+	column-gap: 200px;
+	flex-wrap: wrap;
+	margin: auto;
+	margin-top: 80px;
+
+}
+.register .text{
+	font-weight: 600;
+	font-size: 50px;
+	color: #FFFDFD;
+	width: 35%;
+	text-align: center;
+	text-shadow: 4px 4px rgba(1, 1, 1, 0.3);
+}
+.register .take{
+	font-weight: 600;
+	font-size: 30px;
+	color: whitesmoke;
+	background: rgba( 255, 255, 255, 0.3 );
+	width: 400px;
+	padding: 24px;
+	border-radius: 22px;
+	box-shadow: 10px 10px 11px  rgba(1, 1, 1, 0.3);
+	backdrop-filter: blur( 3px );
+	-webkit-backdrop-filter: blur( 3px );
+	margin-right: 20px;
+}
+.register .take label{
+	margin: 0;
+}
+::placeholder{
+	color: #FFE2E2;
+}
+.register .take input{
+	border: none;
+	border-bottom: 2px solid #FEF2F2;
+	background: transparent;
+	font-weight: 300;
+	font-size: 20px;
+	color: #FFE2E2;
+	width: 60%;
+	margin-bottom: 20px;
+}
+.register .take input:focus{
+	outline: none;
+}
+.register button{
+	background: rgba( 255, 255, 255, 0.3 );
+	color: whitesmoke;
+	font-weight: 700;
+	font-size: 20px;
+	height: 40px;
+	width: 100px;
+	margin-top: 26px;
+	margin-left: 20px;
+	border: none;
+	border-radius: 12px;
+	box-shadow: 5px 5px 15px  rgba(1, 1, 1, 0.3);
+	backdrop-filter: blur( 3px );
+	-webkit-backdrop-filter: blur( 3px );
+	transition-duration: 0.4s;
+}
+.register button:hover, .register button:focus{
+	background: rgba( 255, 255, 255, 0 );
+	border: 2px solid white;
+	outline: none;
+}
+#snackbar1 {
+	visibility: hidden;
+	min-width: 250px;
+	margin-left: -125px;
+	background: rgba( 255, 255, 255, 0.3 );
+	box-shadow: 5px 5px 10px  rgba(1, 1, 1, 0.3);
+	backdrop-filter: blur( 3px );
+	-webkit-backdrop-filter: blur( 3px );
+	border-radius: 10px;
+	border: 1px solid rgba( 255, 255, 255, 0.18 );  color: #fff;
+	text-align: center;
+	padding: 16px;
+	position: fixed;
+	z-index: 1;
+	left: 50%;
+	bottom: 30px;
+	font-size: 17px;
+	font-weight: 800;
+	font-family: "Inter", sans-serif;
+	color: black;
+}
+
+#snackbar1.show {
+  visibility: visible;
+  -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+  animation: fadein 0.5s, fadeout 0.5s 2.5s;
+}
+
+@-webkit-keyframes fadein {
+  from {bottom: 0; opacity: 0;} 
+  to {bottom: 30px; opacity: 1;}
+}
+
+@keyframes fadein {
+  from {bottom: 0; opacity: 0;}
+  to {bottom: 30px; opacity: 1;}
+}
+
+@-webkit-keyframes fadeout {
+  from {bottom: 30px; opacity: 1;} 
+  to {bottom: 0; opacity: 0;}
+}
+
+@keyframes fadeout {
+  from {bottom: 30px; opacity: 1;}
+  to {bottom: 0; opacity: 0;}
+}
+#snackbar2 {
+	visibility: hidden;
+	min-width: 250px;
+	margin-left: -125px;
+	background: rgba( 255, 255, 255, 0.3 );
+	box-shadow: 5px 5px 10px  rgba(1, 1, 1, 0.3);
+	backdrop-filter: blur( 3px );
+	-webkit-backdrop-filter: blur( 3px );
+	border-radius: 10px;
+	border: 1px solid rgba( 255, 255, 255, 0.18 );  color: #fff;
+	text-align: center;
+	padding: 16px;
+	position: fixed;
+	z-index: 1;
+	left: 50%;
+	bottom: 30px;
+	font-size: 17px;
+	font-weight: 800;
+	font-family: "Inter", sans-serif;
+	color: black;
+}
+
+#snackbar2.show {
+  visibility: visible;
+  -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+  animation: fadein 0.5s, fadeout 0.5s 2.5s;
+}
+
+@-webkit-keyframes fadein {
+  from {bottom: 0; opacity: 0;} 
+  to {bottom: 30px; opacity: 1;}
+}
+
+@keyframes fadein {
+  from {bottom: 0; opacity: 0;}
+  to {bottom: 30px; opacity: 1;}
+}
+
+@-webkit-keyframes fadeout {
+  from {bottom: 30px; opacity: 1;} 
+  to {bottom: 0; opacity: 0;}
+}
+
+@keyframes fadeout {
+  from {bottom: 30px; opacity: 1;}
+  to {bottom: 0; opacity: 0;}
+}

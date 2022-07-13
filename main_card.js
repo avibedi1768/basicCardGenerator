@@ -2,6 +2,7 @@ if(window.localStorage.getItem("id") == undefined){
 	window.localStorage.setItem("id","1");
 }
 function loadwala() {
+	compo("Your Name", "Designation", "example@gmail.com", "https://www.instagram.com/", "https://github.com/", "https://www.linkedin.com/feed/", "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.");
 	for(i=1; i<window.localStorage.getItem("id"); i++){
 		if(window.localStorage.getItem("name"+i) == "" || window.localStorage.getItem("name"+i) == undefined){
 			continue;
@@ -20,30 +21,35 @@ function accept(){
 	var name = document.getElementById("name").value;
 	var desig = document.getElementById("desig").value;
 	var email = document.getElementById("email").value;
-	// var phn = document.getElementById("phn").value;
 	var ig = document.getElementById("ig").value;
 	var gith = document.getElementById("gith").value;
 	var li = document.getElementById("li").value;
 	var about = document.getElementById("about").value;
 	var id = window.localStorage.getItem("id");
 	if (name=="" || desig=="" || email=="" || ig=="" || gith=="" || li=="" || about==""){
-		window.alert("Please enter some data!!");
+		myFunction();
 	}
 	else{
-		sendToLocal(name, desig, email, ig, gith, li, about, id);
+		window.localStorage.setItem("name"+id, name);
+		window.localStorage.setItem("desig"+id, desig);
+		window.localStorage.setItem("email"+id, email);
+		window.localStorage.setItem("li"+id, ig);
+		window.localStorage.setItem("gith"+id, gith);
+		window.localStorage.setItem("ig"+id, li);
+		window.localStorage.setItem("about"+id, about);
 		id++;
 		window.localStorage.setItem("id",id);
+		compo(name, desig, email, ig, gith, li, about);	
+		document.getElementById("name").value = "";
+		document.getElementById("desig").value = "";
+		document.getElementById("email").value = "";
+		document.getElementById("ig").value = "";
+		document.getElementById("gith").value = "";
+		document.getElementById("li").value = "";
+		document.getElementById("about").value = "";
 	}
 }
-function sendToLocal(name, desig, email, ig, gith, li, about, id) {
-	window.localStorage.setItem("name"+id, name);
-	window.localStorage.setItem("desig"+id, desig);
-	window.localStorage.setItem("email"+id, email);
-	window.localStorage.setItem("li"+id, ig);
-	window.localStorage.setItem("gith"+id, gith);
-	window.localStorage.setItem("ig"+id, li);
-	window.localStorage.setItem("about"+id, about);
-}
+
 function compo(name, desig, email, ig, gith, li, about){	
 	var div = document.createElement("div");
 	div.className = "card";
@@ -86,4 +92,9 @@ function compo(name, desig, email, ig, gith, li, about){
 	div.className = "card";
 	div.append(h1, h2, socials, hr, p);
 	document.getElementById("root").appendChild(div);
+}
+function myFunction() {
+  var x = document.getElementById("snackbar");
+  x.className = "show";
+  setTimeout(function(){ x.className = x.className.replace("show", ""); }, 3000);
 }

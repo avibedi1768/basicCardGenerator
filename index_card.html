@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>card generator</title>
+	<link rel="stylesheet" type="text/css" href="style_card.css">
+	<!-- font awesome -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<!-- font-families -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700;800&family=Rubik+Moonrocks&family=Indie+Flower:wght@800&display=swap" rel="stylesheet">
+
+</head>
+<body onload=" loadwala()">
+	<div id="heading">
+		<h3>CREATE YOUR OWN</h3>
+		<h1>Personalised Card</h1>
+	</div>
+	<div id="info">
+		<div class ="inps">
+			<label for="name">Name</label><br>
+			<input type="text" id="name" placeholder="Your Input">
+		</div>
+		<div class ="inps">
+			<label for="desig">Designation</label><br>
+			<input type="text" id="desig" placeholder="Your Input">
+		</div>
+		<div class ="inps">
+			<label for="email">Email</label><br>
+			<input type="email" id="email" placeholder="Your Input">
+		</div>
+		<div class ="inps">
+			<label for="ig">Instagram</label><br>
+			<input type="text" id="ig" placeholder="Your Input">
+		</div>
+		<div class ="inps">
+			<label for="gith">GitHub</label><br>
+			<input type="text" id="gith" placeholder="Your Input">
+		</div>
+		<div class ="inps">
+			<label for="li">LinkedIn</label><br>
+			<input type="text" id="li" placeholder="Your Input">
+		</div>
+		<div class ="inps">
+			<label for="about">About</label><br>
+			<input type="text" id="about" placeholder="Your Input">
+		</div>
+		<button onclick="accept()">Submit</button>
+	</div>
+	<div id="snackbar">Please enter some valid data!!</div>
+	<section id="root"></section>
+	<script src="main_card.js"></script>
+</body>
+</html>
