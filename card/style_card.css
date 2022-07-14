@@ -187,4 +187,5 @@ button:focus, button:hover {
 	font-family: "Inter", sans-serif;
 	font-weight: 300;
 	color: rgba(255, 255, 255, 0.9);
+	word-wrap: break-word;
 }
