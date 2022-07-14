@@ -33,9 +33,9 @@ function accept(){
 		window.localStorage.setItem("name"+id, name);
 		window.localStorage.setItem("desig"+id, desig);
 		window.localStorage.setItem("email"+id, email);
-		window.localStorage.setItem("li"+id, ig);
+		window.localStorage.setItem("ig"+id, ig);
 		window.localStorage.setItem("gith"+id, gith);
-		window.localStorage.setItem("ig"+id, li);
+		window.localStorage.setItem("li"+id, li);
 		window.localStorage.setItem("about"+id, about);
 		id++;
 		window.localStorage.setItem("id",id);
@@ -47,6 +47,17 @@ function accept(){
 		document.getElementById("gith").value = "";
 		document.getElementById("li").value = "";
 		document.getElementById("about").value = "";
+		var db = firebase.database();
+		db.ref(name + desig).set({
+			name: name,
+			designation: desig,
+			email: email,
+			instagram: ig,
+			github: gith,
+			linkedin: li,
+			about: about
+
+		})
 	}
 }
 
